@@ -1,7 +1,8 @@
 # Личный проект «Седона»
 
 * Студент: [Маргарита Еремина](https://up.htmlacademy.ru/htmlcss-individual/3/user/407511).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Антипина](https://htmlacademy.ru/profile/id2108789).
+* Сайт: [проект "Седона"](https://randomrationalizer.github.io/407511-sedona-3/)
 
 ---
 
