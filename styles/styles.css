@@ -1,0 +1,277 @@
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+.button {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+  text-align: center;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-decoration: none;
+  background-color: #756157;
+}
+
+.button-subscribe {
+  font-size: 20px;
+  line-height: 36px;
+  background-color: #82B3D3;
+}
+
+.button-submit {
+  background-color: #82B3D3;
+}
+
+.button-reset {
+  background-color: transparent;
+}
+
+.search .button {
+  font-size: 20px;
+  line-height: 36px;
+}
+
+.button-favorite {
+  background-color: #82B3D3;
+}
+
+.button-favorite-added {
+  background-color: #7DB54F;
+}
+
+.page-header {
+  color: #000000;
+}
+
+.navigation-link {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-decoration: none;
+}
+
+.favorites-count {
+  font-size: 10px;
+  line-height: 10px;
+  font-weight: 400;
+  color: #FFFFFF;
+  background-color: #7DB54F;
+}
+
+.hero {
+  background-color: #7DB54F;
+  background-image: url(../images/background/hero-background.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.advantages {
+  text-align: center;
+}
+
+.slogan {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.advantages-item {
+  background-color: #83B3D31F;
+}
+
+.advantages-item:nth-child(4n+3) {
+  background-color: #83B3D333;
+}
+
+.advantages-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.advantages-description {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.advantages-item-with-photo {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.advantages-item-with-photo .advantages-title {
+  color: #FFFFFF;
+}
+
+.service {
+  text-align: center;
+}
+
+.service-item:nth-child(2n+1) {
+  background-color: #83B3D31F;
+}
+
+.service-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.service-desription {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.search {
+  text-align: center;
+}
+
+.subscription {
+  text-align: center;
+}
+
+.subscription-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.subscription-index {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  background-image: url(../images/background/subscribe-background.jpg);
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.subscription-index .subscription-title {
+  color: #FFFFFF;
+}
+
+.page-footer a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.page-footer-phone {
+  font-size: 40px;
+  line-height: 40px;
+}
+
+.inner-wrapper {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+  background-image: url("../images/background/catalog-background.jpg");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
+
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+  font-weight: 700;
+}
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.filter-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.filter-label {
+  font-size: 18px;
+  line-height: 23px;
+}
+
+.catalog-title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.catalog-sort {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.card-link {
+  text-decoration: none;
+}
+
+.card-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  color: #000000;
+}
+
+.card-category {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.card-price {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.card-rating-count {
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  background-color: #F2F2F2;
+}
+
+.pagination-link {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+  background-color: #82B3D3;
+}
+
+.pagination-link-current {
+  color: #000000;
+  background-color: #F2F2F2;
+}

@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
 
   <body>
@@ -25,14 +26,14 @@
           </li>
         </ul>
 
-        <ul class="user-navigation">
-          <li class="user-navigation-item">
-            <a class="user-navigation-link user-navigation-link-search" href="#">
+        <ul class="navigation-list user-navigation">
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-search" href="#">
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
-          <li class="user-navigation-item">
-            <a class="user-navigation-link user-navigation-link-favorites" href="#">
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-favorites" href="#">
               <span class="visually-hidden">Избранное:</span>
               <span class="favorites-count">12</span>
               <span class="visually-hidden">отелей</span>
@@ -113,7 +114,7 @@
         <form class="subscription-form" action="https://echo.htmlacademy.ru/" method="post">
           <label class="visually-hidden" for="subscription-email">Email</label>
           <input class="subscription-field" type="email" name="subscription-email" id="subscription-email" required placeholder="Ваш e-mail">
-          <button class="button button-submit" type="submit">Подписаться</button>
+          <button class="button button-subscribe" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
