@@ -19,7 +19,7 @@ body {
   font-size: 22px;
   line-height: 26px;
   color: #333333;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .button {
@@ -28,7 +28,7 @@ body {
   line-height: 20px;
   font-weight: 700;
   text-align: center;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
   background-color: #756157;
@@ -37,11 +37,11 @@ body {
 .button-subscribe {
   font-size: 20px;
   line-height: 36px;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .button-submit {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .button-reset {
@@ -54,11 +54,11 @@ body {
 }
 
 .button-favorite {
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .button-favorite-added {
-  background-color: #7DB54F;
+  background-color: #7db54f;
 }
 
 .page-header {
@@ -77,13 +77,13 @@ body {
   font-size: 10px;
   line-height: 10px;
   font-weight: 400;
-  color: #FFFFFF;
-  background-color: #7DB54F;
+  color: #ffffff;
+  background-color: #7db54f;
 }
 
 .hero {
-  background-color: #7DB54F;
-  background-image: url(../images/background/hero-background.jpg);
+  background-color: #354751;
+  background-image: url("../images/background/hero-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
@@ -101,11 +101,11 @@ body {
 }
 
 .advantages-item {
-  background-color: #83B3D31F;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .advantages-item:nth-child(4n+3) {
-  background-color: #83B3D333;
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .advantages-title {
@@ -122,12 +122,12 @@ body {
 }
 
 .advantages-item-with-photo {
-  color: #FFFFFF;
-  background-color: #82B3D3;
+  color: #ffffff;
+  background-color: #82b3d3;
 }
 
 .advantages-item-with-photo .advantages-title {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .service {
@@ -135,7 +135,7 @@ body {
 }
 
 .service-item:nth-child(2n+1) {
-  background-color: #83B3D31F;
+  background-color: rgba(131, 179, 211, 0.12);
 }
 
 .service-title {
@@ -168,15 +168,24 @@ body {
 }
 
 .subscription-index {
-  color: #FFFFFF;
-  background-color: #82B3D3;
-  background-image: url(../images/background/subscribe-background.jpg);
+  color: #ffffff;
+  background-color: #354751;
+  background-image: url("../images/background/subscribe-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
 
 .subscription-index .subscription-title {
-  color: #FFFFFF;
+  color: #ffffff;
+}
+
+.subscription-field {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #f2f2f2;
 }
 
 .page-footer a {
@@ -190,8 +199,8 @@ body {
 }
 
 .inner-wrapper {
-  color: #FFFFFF;
-  background-color: #82B3D3;
+  color: #ffffff;
+  background-color: #354751;
   background-image: url("../images/background/catalog-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -203,10 +212,13 @@ body {
   font-weight: 700;
 }
 
-.breadcrumbs-link {
+.breadcrumbs {
   font-size: 16px;
   line-height: 21px;
-  color: #FFFFFF;
+}
+
+.breadcrumbs-link {
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -221,6 +233,15 @@ body {
   line-height: 23px;
 }
 
+.filter-input {
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #f2f2f2;
+}
+
 .catalog-title {
   font-size: 30px;
   line-height: 36px;
@@ -230,6 +251,7 @@ body {
 }
 
 .catalog-sort {
+  font-family: inherit;
   font-size: 18px;
   line-height: 21px;
 }
@@ -259,19 +281,19 @@ body {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .pagination-link {
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
-  color: #FFFFFF;
+  color: #ffffff;
   text-decoration: none;
-  background-color: #82B3D3;
+  background-color: #82b3d3;
 }
 
 .pagination-link-current {
   color: #000000;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
