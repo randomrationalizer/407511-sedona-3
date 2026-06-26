@@ -53,16 +53,21 @@ html {
 }
 
 body {
+  height: 100%;
+  margin: 0;
+  font-family: "PT Sans", sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--text-color);
+  background-color: var(--bg-color-additional);
+}
+
+.page-container {
   display: flex;
   flex-direction: column;
   width: 1200px;
   min-height: 100%;
   margin: 0 auto;
-
-  font-family: "PT Sans", sans-serif;
-  font-size: 22px;
-  line-height: 26px;
-  color: var(--text-color);
   background-color: var(--bg-color-basic);
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
@@ -166,14 +171,17 @@ body {
 
 .hero-img {
   display: block;
+  width: 458px;
+  height: 352px;
   margin: 0 auto;
+  object-fit: contain;
 }
 
 .advantages {
   text-align: center;
 }
 
-.advantages-wrapper {
+.content-wrapper {
   width: 700px;
   margin: 0 auto;
 }
@@ -233,11 +241,6 @@ body {
   text-align: center;
 }
 
-.service-wrapper {
-  width: 520px;
-  margin: 0 auto;
-}
-
 .service-list {
   display: flex;
   flex-wrap: wrap;
@@ -268,12 +271,13 @@ body {
 }
 
 .search {
-  padding: 96px 304px;
+  padding: 96px 0;
   text-align: center;
 }
 
 .subscription {
-  padding: 96px 258px 104px;
+  padding-top: 96px;
+  padding-bottom: 104px;
   text-align: center;
 }
 
