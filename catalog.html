@@ -66,58 +66,55 @@
             <h2 class="visually-hidden">Фильтры</h2>
 
             <form class="filter-form" action="https://echo.htmlacademy.ru/" method="get">
-              <!-- <div class="filter-columns"> -->
-                <fieldset class="filter-group">
-                  <legend class="filter-title">Инфраструктура:</legend>
-                  <ul class="filter-list">
-                    <li class="filter-item">
-                      <input class="filter-input" type="checkbox" name="pool" id="pool" checked>
-                      <label class="filter-label" for="pool">Бассейн</label>
-                    </li>
-                    <li class="filter-item">
-                      <input class="filter-input" type="checkbox" name="parking" id="parking" checked>
-                      <label class="filter-label" for="parking">Парковка</label>
-                    </li>
-                    <li class="filter-item">
-                      <input class="filter-input" type="checkbox" name="wifi" id="wifi">
-                      <label class="filter-label" for="wifi">Wi-Fi</label>
-                    </li>
-                  </ul>
-                </fieldset>
+              <fieldset class="filter-group">
+                <legend class="filter-title">Инфраструктура:</legend>
+                <ul class="filter-list">
+                  <li class="filter-item">
+                    <input class="filter-input" type="checkbox" name="pool" id="pool" checked>
+                    <label class="filter-label" for="pool">Бассейн</label>
+                  </li>
+                  <li class="filter-item">
+                    <input class="filter-input" type="checkbox" name="parking" id="parking" checked>
+                    <label class="filter-label" for="parking">Парковка</label>
+                  </li>
+                  <li class="filter-item">
+                    <input class="filter-input" type="checkbox" name="wifi" id="wifi">
+                    <label class="filter-label" for="wifi">Wi-Fi</label>
+                  </li>
+                </ul>
+              </fieldset>
 
-                <fieldset class="filter-group">
-                  <legend class="filter-title">Тип жилья:</legend>
-                  <ul class="filter-list">
-                    <li class="filter-item">
-                      <input class="filter-input" type="radio" name="booking-type" value="hotel" id="hotel" checked>
-                      <label class="filter-label" for="hotel">Гостиница</label>
-                    </li>
-                    <li class="filter-item">
-                      <input class="filter-input" type="radio" name="booking-type" value="motel" id="motel">
-                      <label class="filter-label" for="motel">Мотель</label>
-                    </li>
-                    <li class="filter-item">
-                      <input class="filter-input" type="radio" name="booking-type" value="appartments" id="appartments">
-                      <label class="filter-label" for="appartments">Апартаменты</label>
-                    </li>
-                  </ul>
-                </fieldset>
-              <!-- </div> -->
-              <!-- <div class="filter-columns filter-columns-right"> -->
-                <fieldset class="filter-group filter-price">
-                  <legend class="filter-title">Стоимость, ₽:</legend>
-                  <label class="filter-label" for="price-min">от</label>
-                  <input class="filter-input" type="number" name="booking-price-min" value="0" id="price-min">
-                  <label class="filter-label" for="price-max">до</label>
-                  <input class="filter-input" type="number" name="booking-price-max" value="9000" id="price-max">
+              <fieldset class="filter-group">
+                <legend class="filter-title">Тип жилья:</legend>
+                <ul class="filter-list">
+                  <li class="filter-item">
+                    <input class="filter-input" type="radio" name="booking-type" value="hotel" id="hotel" checked>
+                    <label class="filter-label" for="hotel">Гостиница</label>
+                  </li>
+                  <li class="filter-item">
+                    <input class="filter-input" type="radio" name="booking-type" value="motel" id="motel">
+                    <label class="filter-label" for="motel">Мотель</label>
+                  </li>
+                  <li class="filter-item">
+                    <input class="filter-input" type="radio" name="booking-type" value="appartments" id="appartments">
+                    <label class="filter-label" for="appartments">Апартаменты</label>
+                  </li>
+                </ul>
+              </fieldset>
 
-                  <input class="filter-range" type="range" min="1" step="1" name="booking-price-range" value="7000">
-                </fieldset>
-                <div class="button-wrapper">
-                  <button class="button button-submit" type="submit">Применить</button>
-                  <button class="button button-reset" type="reset">Сбросить</button>
-                </div>
-              <!-- </div> -->
+              <fieldset class="filter-group filter-price">
+                <legend class="filter-title">Стоимость, ₽:</legend>
+                <label class="filter-label" for="price-min">от</label>
+                <input class="filter-input" type="number" name="booking-price-min" value="0" id="price-min">
+                <label class="filter-label" for="price-max">до</label>
+                <input class="filter-input" type="number" name="booking-price-max" value="9000" id="price-max">
+
+                <input class="filter-range" type="range" min="1" step="1" name="booking-price-range" value="7000">
+              </fieldset>
+              <div class="button-wrapper">
+                <button class="button button-submit" type="submit">Применить</button>
+                <button class="button button-reset" type="reset">Сбросить</button>
+              </div>
             </form>
           </section>
         </div>
