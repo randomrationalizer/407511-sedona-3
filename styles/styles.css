@@ -95,6 +95,7 @@ body {
   text-transform: uppercase;
   text-decoration: none;
   background-color: var(--button-color-main);
+  border: none;
   border-radius: 4px;
 }
 
@@ -103,6 +104,7 @@ body {
   font-size: 20px;
   line-height: 36px;
   background-color: var(--button-color-additional);
+  border-radius: 0 4px 4px 0;
 }
 
 .button-submit {
@@ -146,6 +148,7 @@ body {
 
 .navigation {
   display: flex;
+  gap: 30px;
   width: 880px;
   margin-right: 20px;
 }
@@ -155,7 +158,6 @@ body {
   display: block;
   width: 138px;
   height: 64px;
-  margin-right: 28px;
 }
 
 .logo {
@@ -278,7 +280,8 @@ body {
 }
 
 .advantages-title {
-  margin: 0 27px 62px;
+  margin-top: 0;
+  margin-bottom: 62px;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -308,7 +311,7 @@ body {
 .advantages-photo {
   display: block;
   width: 800px;
-  height: 385px;
+  height: auto; /*фото тянется при*/
   object-fit: cover;
 }
 
@@ -330,15 +333,14 @@ body {
 }
 
 .service-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
 .service-item {
-  width: 230px;
   padding: 81px 85px;
 }
 
@@ -407,17 +409,19 @@ body {
 .subscription-form {
   display: flex;
   width: 684px;
-  margin: 0 auto;
 }
 
 .subscription-field {
   flex-grow: 1;
+  min-width: 340px;
+  padding: 14px 20px;
   font-family: inherit;
   font-size: 18px;
   line-height: 24px;
-  font-weight: 700;
   color: var(--text-color-accent);
   background-color: var(--input-color);
+  border: none;
+  border-radius: 4px 0 0 4px;
 }
 
 .page-footer {
@@ -513,23 +517,17 @@ body {
 
 .filter-form {
   display: flex;
-  justify-content: space-between;
-}
-
-.filter-columns {
-  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
 }
 
 .filter-group {
-  margin-right: 70px;
+  max-width: 160px;
 }
 
-.filter-columns-right {
-  width: 549px;
-}
-
-.filter-columns-right .filter-group {
+.filter-price {
   width: 288px;
+  margin-left: auto;
 }
 
 .button-wrapper {
@@ -570,6 +568,7 @@ body {
 
 .catalog-wrapper {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin-bottom: 40px;
 }
@@ -681,6 +680,7 @@ body {
 
 .pagination {
   display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
