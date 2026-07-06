@@ -664,11 +664,18 @@ body {
   padding: 0;
   padding-bottom: 40px;
   list-style: none;
+  border-bottom: 1px solid var(--border-color);
 }
 
 .card {
   display: grid;
   grid-template-columns: 140px 140px;
+  grid-template-rows:
+    212px
+    1fr
+    auto
+    auto
+    auto;
   gap: 16px 20px;
   padding: 20px;
   border: 1px solid var(--border-color);
@@ -682,7 +689,6 @@ body {
 
 .card-title {
   margin: 0;
-  margin-bottom: 0;
   font-size: 24px;
   line-height: 28px;
   font-weight: 700;
@@ -691,6 +697,7 @@ body {
 
 .card-img {
   order: -1;
+  grid-column: 1 / -1;
 }
 
 .photo {
@@ -710,21 +717,19 @@ body {
 .card-price {
   grid-column: 2 / 3;
   margin: 0;
-  margin-bottom: 0;
   font-size: 18px;
   line-height: 21px;
   text-align: right;
 }
 
-.card-rating {
-  grid-column: 1 / -1;
-  justify-self: end;
+.card-stars {
+  grid-column: 1 / 2;
   margin: 0;
-  margin-bottom: 0;
 }
 
-.card-rating-count {
-  display: block;
+.card-rating {
+  grid-column: 2 / 3;
+  margin: 0;
   padding: 8px 22px;
   font-size: 16px;
   line-height: 20px;
