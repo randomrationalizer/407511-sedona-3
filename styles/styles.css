@@ -521,15 +521,30 @@ body {
 
 .filter-form {
   display: flex;
+  gap: 70px;
+}
+
+.filter-columns {
+  display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 40px 70px;
+}
+
+.filter-columns-right {
+  width: 549px;
+  flex-shrink: 0;
+  margin-left: auto;
 }
 
 .filter-group {
   margin: 0;
   padding: 0;
   border: none;
+}
+
+.filter-columns-left .filter-group {
+  max-width: 200px;
 }
 
 .filter-title {
@@ -565,7 +580,6 @@ body {
   display: flex;
   flex-wrap: wrap;
   width: 288px;
-  margin-left: auto;
 }
 
 .filter-price .filter-input {
@@ -638,14 +652,12 @@ body {
 
 .card-view-buttons {
   display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
   width: 160px;
   margin: 0;
   padding: 0;
   list-style: none;
-}
-
-.card-view-item:not(:last-child) {
-  margin-right: 8px;
 }
 
 .card-view-button {
@@ -673,8 +685,6 @@ body {
   grid-template-rows:
     212px
     1fr
-    auto
-    auto
     auto;
   gap: 16px 20px;
   padding: 20px;
