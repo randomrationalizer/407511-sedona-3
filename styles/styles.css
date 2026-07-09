@@ -661,15 +661,15 @@ body {
   object-fit: contain;
 }
 
-.htmlacademy-logo:hover {
+.page-footer-link:hover .htmlacademy-logo {
   fill: var(--text-color-phone);
 }
 
-.htmlacademy-logo:focus {
+.page-footer-link:focus .htmlacademy-logo {
   fill: var(--text-color-phone);
 }
 
-.htmlacademy-logo:active {
+.page-footer-link:active .htmlacademy-logo{
   opacity: 0.3;
 }
 
