@@ -128,42 +128,36 @@ body {
 
 .button:active {
   color: var(--text-color-active);
+  background-color: var(--button-color-main);
 }
 
 .button:disabled {
   background-color: var(--button-disabled);
 }
 
+.button-light {
+  background-color: var(--button-color-additional);
+}
+
+.button-light:hover {
+  background-color: var(--button-additional-hover);
+}
+
+.button-light:focus {
+  background-color: var(--button-additional-hover);
+}
+
+.button-light:active {
+  color: var(--text-color-active);
+  background-color: var(--button-color-additional);
+}
+
 .button-subscribe {
   padding: 8px 50px;
   font-size: 20px;
   line-height: 36px;
-  background-color: var(--button-color-additional);
+
   border-radius: 0 4px 4px 0;
-}
-
-.button-subscribe:hover {
-  background-color: var(--button-additional-hover);
-}
-
-.button-subscribe:focus {
-  background-color: var(--button-additional-hover);
-}
-
-.button-submit {
-  background-color: var(--button-color-additional);
-}
-
-.button-submit:hover {
-  background-color: var(--button-additional-hover);
-}
-
-.button-submit:focus {
-  background-color: var(--button-additional-hover);
-}
-
-.button-submit:active {
-  color: rgba(255, 255, 255, 0.3);
 }
 
 .button-reset {
@@ -176,12 +170,13 @@ body {
 }
 
 .button-reset:focus {
+  color: var(--text-color-contrast);
   outline: 3px solid #83B3D3;
   background-color: transparent;
 }
 
 .button-reset:active {
-  color: rgba(255, 255, 255, 0.3);
+  color: var(--text-color-active);
 }
 
 .search .button {
@@ -193,22 +188,11 @@ body {
 
 .button-favorite {
   padding: 8px 20px;
-  background-color: var(--button-color-additional);
-  border: 0;
-}
-
-.button-favorite:hover {
-  background-color: var(--button-additional-hover);
-}
-
-.button-favorite:focus {
-  background-color: var(--button-additional-hover);
 }
 
 .button-favorite-added {
   padding: 8px 18px;
   background-color: var(--button-color-selected);
-  border: 0;
 }
 
 .button-favorite-added:hover {
@@ -217,6 +201,10 @@ body {
 
 .button-favorite-added:focus {
   background-color: var(--button-selected-hover);
+}
+
+.button-favorite-added:active {
+  background-color: var(--button-color-selected);
 }
 
 .card-button {
