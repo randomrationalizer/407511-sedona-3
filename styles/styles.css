@@ -55,9 +55,9 @@
   --underline-light: var(--white-transparent);
   --underline-dark: var(--black-transparent);
 
-  --outline-color: var(--blue);
-
   --shadow-color: var(--grey-transparent);
+
+  --browser-outline: 3px solid var(--blue);
 }
 
 @font-face {
@@ -134,6 +134,7 @@ body {
 
 .button:focus-visible {
   background-color: var(--button-dark-hover);
+  outline: var(--browser-outline);
 }
 
 .button:active {
@@ -155,6 +156,7 @@ body {
 
 .button-light:focus-visible {
   background-color: var(--button-light-hover);
+  outline: var(--browser-outline);
 }
 
 .button-light:active {
@@ -181,7 +183,7 @@ body {
 
 .button-reset:focus-visible {
   color: var(--text-color-contrast);
-  outline: 3px solid var(--outline-color);
+  outline: var(--browser-outline);
   background-color: transparent;
 }
 
@@ -212,6 +214,7 @@ body {
 
 .button-favorite-added:focus-visible {
   background-color: var(--button-favorited-hover);
+  outline: var(--browser-outline);
 }
 
 .button-favorite-added:active {
@@ -250,6 +253,7 @@ body {
 
 .navigation-logo:focus-visible {
   opacity: 0.6;
+  outline: var(--browser-outline);
 }
 
 .navigation-logo:active {
@@ -294,6 +298,7 @@ body {
 
 .navigation-link:not(.navigation-link-current):focus-visible {
   color: var(--text-color-menu-hover);
+  outline: var(--browser-outline);
 }
 
 .navigation-link:not(.navigation-link-current):active {
@@ -303,7 +308,7 @@ body {
 .navigation-link-current::before {
   position: absolute;
   content: "";
-  bottom: 0;
+  bottom: -1px;
   left: 16px;
   right: 16px;
   height: 2px;
@@ -334,6 +339,7 @@ body {
 
 .user-navigation .navigation-link:focus-visible {
   opacity: 0.6;
+  outline: var(--browser-outline);
 }
 
 .user-navigation .navigation-link:active {
@@ -682,8 +688,9 @@ body {
   color: var(--icon-color-hover);
 }
 
-.social-link:focus{
+.social-link:focus-visible {
   color: var(--icon-color-hover);
+  outline: var(--browser-outline);
 }
 
 .social-link:active {
@@ -704,6 +711,7 @@ body {
 
 .page-footer-phone:focus-visible {
   color: var(--text-color-menu-hover);
+  outline: var(--browser-outline);
 }
 
 .page-footer-phone:active {
@@ -726,7 +734,11 @@ body {
   fill: var(--text-color-menu-hover);
 }
 
-.page-footer-link:focus .htmlacademy-logo {
+.page-footer-link:focus-visible {
+  outline: var(--browser-outline);
+}
+
+.page-footer-link:focus-visible .htmlacademy-logo {
   fill: var(--text-color-menu-hover);
 }
 
@@ -810,6 +822,7 @@ body {
 
 .breadcrumbs-link:not(.breadcrumbs-link-current):focus-visible {
   opacity: 0.6;
+  outline: var(--browser-outline);
 }
 
 .breadcrumbs-link:not(.breadcrumbs-link-current):active {
@@ -953,7 +966,7 @@ body {
 }
 
 .catalog-sort:focus-visible {
-  border-color: var(--border-hover);
+  outline: var(--browser-outline);
 }
 
 .catalog-sort:disabled {
@@ -1003,7 +1016,7 @@ body {
 }
 
 .card-view-button:focus-visible {
-  border-color: var(--border-hover);
+  outline: var(--browser-outline);
 }
 
 .card-view-button:active {
@@ -1072,6 +1085,7 @@ body {
 
 .card-img:focus-visible {
   opacity: 0.8;
+  outline: var(--browser-outline);
 }
 
 .card-img:active {
@@ -1183,6 +1197,7 @@ body {
 
 .pagination-link:not(.pagination-link-current):focus-visible {
   background-color: var(--button-light-hover);
+  outline: var(--browser-outline);
 }
 
 .pagination-link:not(.pagination-link-current):active {
