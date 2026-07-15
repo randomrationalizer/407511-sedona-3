@@ -11,6 +11,7 @@
   --brown: #756157;
   --dark-brown: #615048;
   --blue: #82b3d3;
+  --blue-lighter: #83b3d3;
   --blue-darker: #68a2ca;
   --dark-blue: #3f5e72;
   --light-blue: rgba(131, 179, 211, 0.12);
@@ -43,7 +44,7 @@
   --input-color: var(--light-grey);
   --input-color-hover: var(--grey);
 
-  --icon-color: var(--blue);
+  --icon-color: var(--blue-lighter);
   --icon-color-hover: var(--blue-darker);
   --icon-color-additional: var(--black);
   --icon-color-accent: var(--green);
@@ -57,7 +58,7 @@
 
   --shadow-color: var(--grey-transparent);
 
-  --browser-outline: 3px solid var(--blue);
+  --browser-outline: 3px solid var(--blue-lighter);
 }
 
 @font-face {
@@ -292,16 +293,16 @@ body {
   text-decoration: none;
 }
 
-.navigation-link:not(.navigation-link-current):hover {
+.navigation-link[href]:hover {
   color: var(--text-color-menu-hover);
 }
 
-.navigation-link:not(.navigation-link-current):focus-visible {
+.navigation-link[href]:focus-visible {
   color: var(--text-color-menu-hover);
   outline: var(--browser-outline);
 }
 
-.navigation-link:not(.navigation-link-current):active {
+.navigation-link[href]:active {
   opacity: 0.3;
 }
 
@@ -455,7 +456,7 @@ body {
   left: 50%;
   width: 60px;
   height: 2px;
-  margin-left: -30px;
+  transform: translateX(-50%);
   background-color: var(--underline-dark);
 }
 
@@ -526,7 +527,7 @@ body {
   content: "";
   width: 75px;
   height: 76px;
-  background-color: var(--bg-color-main);
+  background-color: var(--icon-color);
   mask-repeat: no-repeat;
   mask-position: center;
   transform: translateX(-50%);
@@ -816,16 +817,16 @@ body {
   mask-size: 12px 12px;
 }
 
-.breadcrumbs-link:not(.breadcrumbs-link-current):hover {
+.breadcrumbs-link[href]:hover {
   opacity: 0.6;
 }
 
-.breadcrumbs-link:not(.breadcrumbs-link-current):focus-visible {
+.breadcrumbs-link[href]:focus-visible {
   opacity: 0.6;
   outline: var(--browser-outline);
 }
 
-.breadcrumbs-link:not(.breadcrumbs-link-current):active {
+.breadcrumbs-link[href]:active {
   opacity: 0.3;
 }
 
@@ -1175,7 +1176,7 @@ body {
   box-sizing: border-box;
   min-width: 60px;
   height: 60px;
-  padding: 12px 18px;
+  padding: 12px 10px;
   font-size: 20px;
   line-height: 36px;
   font-weight: 700;
@@ -1191,16 +1192,16 @@ body {
   background-color: var(--bg-color-additional);
 }
 
-.pagination-link:not(.pagination-link-current):hover {
+.pagination-link[href]:hover {
   background-color: var(--button-light-hover);
 }
 
-.pagination-link:not(.pagination-link-current):focus-visible {
+.pagination-link[href]:focus-visible {
   background-color: var(--button-light-hover);
   outline: var(--browser-outline);
 }
 
-.pagination-link:not(.pagination-link-current):active {
+.pagination-link[href]:active {
   color: var(--text-color-active);
   background-color: var(--button-light);
 }
