@@ -641,7 +641,8 @@ body {
   background-color: var(--input-color-hover);
 }
 
-.subscription-field:focus {
+.subscription-field:focus-visible {
+  outline: var(--browser-outline);
   background-color: var(--input-color-hover);
 }
 
