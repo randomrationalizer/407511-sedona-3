@@ -107,12 +107,29 @@
               <div class="filter-columns filter-columns-right">
                 <fieldset class="filter-group filter-price">
                   <legend class="filter-title">Стоимость, ₽:</legend>
-                  <label class="visually-hidden filter-label" for="price-min">от</label>
-                  <input class="filter-input" type="number" name="booking-price-min" value="0" id="price-min">
-                  <label class="visually-hidden filter-label" for="price-max">до</label>
-                  <input class="filter-input" type="number" name="booking-price-max" value="9000" id="price-max">
 
-                  <input class="filter-range" type="range" min="1" step="1" name="booking-price-range" value="7000">
+                  <label class="range-label filter-label" for="price-min">
+                    <span class="range-label-text">от</span>
+                    <input class="range-input" type="number" name="price-min" value="" id="price-min" placeholder="0">
+                  </label>
+
+                  <label class="range-label filter-label" for="price-max">
+                    <span class="range-label-text">до</span>
+                    <input class="range-input" type="number" name="price-max" value="" id="price-max" placeholder="9000">
+                  </label>
+
+                  <div class="filter-range">
+                    <div class="range-track">
+                      <div class="range-progressbar" style="left: 0; width: 226px">
+                        <button class="range-toggle toggle-min" type="button">
+                          <span class="visually-hidden">Изменить минимальную цену</span>
+                        </button>
+                        <button class="range-toggle toggle-max" type="button">
+                          <span class="visually-hidden">Изменить максимальную цену</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                 </fieldset>
                 <div class="button-wrapper">
                   <button class="button button-submit button-light" type="submit">Применить</button>
