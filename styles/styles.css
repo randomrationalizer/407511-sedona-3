@@ -74,6 +74,7 @@
   --underline-light: var(--white-transparent);
   --underline-dark: var(--black-transparent);
 
+  /*ПЕРЕПИСАТЬ*/
   --shadow-color: var(--grey-transparent);
   --shadow-input-hover: var(--black-shadow);
   --shadow-input-active: var(--black-light-shadow);
@@ -1637,6 +1638,7 @@ body {
 }
 
 .count-button:focus-visible {
+  color: var(--icon-color-additional);
   outline: var(--browser-outline);
 }
 
