@@ -1664,9 +1664,6 @@ body {
 
 .tooltip {
   position: relative;
-  display: flex;
-  gap: 10px;
-  align-items: center;
 }
 
 .tooltip-text {
@@ -1704,7 +1701,7 @@ body {
 }
 
 .tooltip-button {
-  flex-shrink: 0;
+  display: block;
   width: 26px;
   height: 26px;
   background-color: var(--bg-color-main);
