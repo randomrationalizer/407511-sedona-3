@@ -74,7 +74,6 @@
   --underline-light: var(--white-transparent);
   --underline-dark: var(--black-transparent);
 
-  /*ПЕРЕПИСАТЬ*/
   --shadow-color: var(--grey-transparent);
   --shadow-input-hover: var(--black-shadow);
   --shadow-input-active: var(--black-light-shadow);
@@ -940,45 +939,36 @@ body {
   appearance: none;
 }
 
-.filter-input[type="checkbox"]::after {
-  display: none;
-  position: absolute;
-  content: "";
-  width: 20px;
-  height: 20px;
-  background-color: var(--input-checkbox-color);
-  mask-image: url('../images/icons/list-marker-tick.svg');
-  mask-repeat: no-repeat;
-  mask-position: center;
-}
-
-.filter-input[type="checkbox"]:checked::after {
-  display: block;
-}
-
 .filter-input[type="radio"] {
   border-radius: 50%;
 }
 
-.filter-input[type="radio"]::after {
+.filter-input::after {
   display: none;
-  position: absolute;
   content: "";
-  top: 5px;
-  left: 5px;
-  width: 10px;
-  height: 10px;
+  width: 20px;
+  height: 20px;
   background-color: var(--input-checkbox-color);
-  border-radius: 50%;
+  mask-repeat: no-repeat;
+  mask-position: center;
 }
 
-.filter-input[type="radio"]:checked::after {
+.filter-input[type="checkbox"]::after {
+  mask-image: url('../images/icons/list-marker-tick.svg');
+}
+
+.filter-input[type="radio"]::after {
+  mask-image: url('../images/icons/list-marker-circle.svg');
+}
+
+.filter-input:checked::after {
   display: block;
 }
 
 .filter-input:hover,
 .filter-input:hover ~ .filter-label  {
   opacity: 0.6;
+  cursor: pointer;
 }
 
 .filter-input:focus-visible {
@@ -987,6 +977,12 @@ body {
 
 .filter-input:active,
 .filter-input:active ~ .filter-label  {
+  opacity: 0.3;
+}
+
+.filter-input:disabled,
+.filter-input:disabled ~ .filter-label {
+  pointer-events: none;
   opacity: 0.3;
 }
 
@@ -1161,6 +1157,7 @@ body {
 
 .catalog-sort:disabled {
   opacity: 0.3;
+  cursor: auto;
 }
 
 .card-view-buttons {
@@ -1405,6 +1402,12 @@ body {
   background-color: transparent;
 }
 
+/*
+  Клас modal-container-show отвечает за отображение модального окна:
+  По умолчанию модальное окно modal-container скрыто.
+  Добавление класса modal-container-show отображает окно.
+*/
+
 .modal-container {
   display: none;
   position: fixed;
@@ -1476,6 +1479,7 @@ body {
 .modal-header {
   margin: 0;
   margin-bottom: 64px;
+  padding-right: 40px;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -1486,17 +1490,22 @@ body {
 .search-form {
   display: grid;
   grid-template-columns: 247px 242px;
-  grid-template-rows: repeat(auto-fit, 48px);
   column-gap: 88px;
-  row-gap: 48px;
+  row-gap: 23px;
   align-items: center;
 }
 
 .field-group {
   display: grid;
   grid-template-columns: 120px 1fr;
-  gap: 18px;
+  column-gap: 18px;
   align-items: center;
+}
+
+.search-form-dates {
+  grid-column: 1 / -1;
+  grid-template-rows: 48px 1fr;
+  row-gap: 4px;
 }
 
 .search-form-label {
@@ -1507,9 +1516,11 @@ body {
   text-transform: capitalize;
 }
 
-.search-form-dates {
-  position: relative;
-  grid-column: 1 / -1;
+.search-form-dates .search-form-label {
+  grid-column: 1 / 2;
+  grid-row: 1 / 3;
+  align-self: start;
+  padding-top: 12px;
 }
 
 .search-form-input {
@@ -1528,10 +1539,11 @@ body {
 
 .input-message {
   display: none;
-  position: absolute;
-  top: 52px;
-  left: 157px;
-  width: 440px;
+  grid-column: 2 / -1;
+  grid-row: 2 / 3;
+  align-self: start;
+  max-width: 400px;
+  padding: 0 20px;
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
@@ -1544,10 +1556,10 @@ body {
 }
 
 .search-form-count {
-  width: 110px;
-  padding: 14px 40px;
+  padding: 12px 0;
   line-height: 20px;
   text-align: center;
+  border-radius: 0;
 }
 
 .search-form-count::-webkit-outer-spin-button,
@@ -1585,39 +1597,33 @@ body {
 }
 
 .count-wrapper {
-  position: relative;
-  justify-self: start;
+  display: grid;
+  grid-template-columns: 40px 31px 40px;
+  grid-template-rows: 48px;
+  width: 111px;
 }
 
 .count-button {
-  position: absolute;
-  width: 40px;
-  height: 100%;
   padding: 0;
   color: var(--icon-color-controls);
-  background-color: transparent;
+  background-color: var(--input-color);
   border: none;
-  border-radius: 4px;
   cursor: pointer;
 }
 
 .count-button::before {
   content: "";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 20px;
-  height: 20px;
+  display: block;
+  width: 100%;
+  height: 100%;
   background-color: currentColor;
   mask-repeat: no-repeat;
   mask-position: center;
   mask-size: 14px 14px;
-  transform: translate(-50%, -50%);
 }
 
 .count-button-decrease {
-  top: 0;
-  left: 0;
+  border-radius: 4px 0 0 4px;
 }
 
 .count-button-decrease::before {
@@ -1625,8 +1631,7 @@ body {
 }
 
 .count-button-increase {
-  top: 0;
-  right: 0;
+  border-radius: 0 4px 4px 0;
 }
 
 .count-button-increase::before {
@@ -1635,10 +1640,12 @@ body {
 
 .count-button:hover {
   color: var(--icon-color-additional);
+  background-color: var(--input-color-hover);
 }
 
 .count-button:focus-visible {
   color: var(--icon-color-additional);
+  background-color: var(--input-color-hover);
   outline: var(--browser-outline);
 }
 
@@ -1648,6 +1655,7 @@ body {
 
 .search-form-submit {
   grid-column: 1 / -1;
+  margin-top: 25px;
   padding: 18px;
   font-size: 20px;
   line-height: 24px;
@@ -1658,7 +1666,7 @@ body {
 }
 
 .field-group-tooltip {
-  grid-template-columns: auto 1fr 110px;
+  grid-template-columns: auto 1fr 111px;
   gap: 10px;
 }
 
