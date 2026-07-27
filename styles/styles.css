@@ -308,7 +308,7 @@ body {
 .navigation-list {
   display: flex;
   flex-wrap: wrap;
-  max-width: 600px;
+  max-width: 590px;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -399,6 +399,11 @@ body {
   color:var(--text-color-contrast);
   background-color: var(--icon-color-accent);
   border-radius: 50%;
+}
+
+.page-header-button {
+  align-self: flex-start;
+  margin: 14px 0;
 }
 
 .main-container {
@@ -1645,14 +1650,14 @@ body {
 }
 
 .tooltip-text {
-  display: none;
+  display: block;
   z-index: 1;
   position: absolute;
   top: calc(100% + 15px);
   left: -115px;
   box-sizing: border-box;
   width: 256px;
-  padding: 15px 18px 18px 22px;
+  padding: 20px 18px 23px 22px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 400;
