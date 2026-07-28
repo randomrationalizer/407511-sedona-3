@@ -151,6 +151,7 @@ body {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .button:hover {
@@ -283,6 +284,7 @@ body {
   display: block;
   width: 138px;
   height: 64px;
+  transition: opacity 0.2s ease;
 }
 
 .navigation-logo:hover {
@@ -328,6 +330,8 @@ body {
   font-weight: 700;
   color: var(--text-color-accent);
   text-decoration: none;
+  transition: opacity 0.2s ease,
+              color 0.2s ease;
 }
 
 .navigation-link[href]:hover {
@@ -669,6 +673,8 @@ body {
   background-color: var(--input-color);
   border: none;
   border-radius: 4px 0 0 4px;
+
+  transition: background-color 0.2s ease;
 }
 
 .subscription-field:not(:disabled):hover {
@@ -706,6 +712,7 @@ body {
   height: 40px;
   color: var(--icon-color);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .social-link::before {
@@ -752,6 +759,7 @@ body {
   line-height: 40px;
   color: var(--text-color-accent);
   text-decoration: none;
+  transition: color 0.2s ease;
 }
 
 .page-footer-phone:hover {
@@ -777,6 +785,7 @@ body {
   width: 115px;
   height: 33px;
   object-fit: contain;
+  transition: fill 0.2s ease;
 }
 
 .page-footer-link:hover .htmlacademy-logo {
@@ -851,6 +860,7 @@ body {
   margin-right: 8px;
   color: var(--text-color-contrast);
   text-decoration: none;
+  transition: opacity 0.2s ease;
 }
 
 .breadcrumbs-link-home {
@@ -953,6 +963,7 @@ body {
   background-color: var(--bg-color-basic);
   border-radius: 4px;
   appearance: none;
+  transition: opacity 0.2s ease;
 }
 
 .filter-input[type="radio"] {
@@ -1022,6 +1033,7 @@ body {
   border: none;
   border-radius: 4px 0 0 4px;
   appearance: textfield;
+  transition: background-color 0.2s ease;
 }
 
 .range-input::-webkit-outer-spin-button,
@@ -1163,6 +1175,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
   appearance: none;
+  transition: border-color 0.2s ease;
 }
 
 .catalog-sort:not(:disabled):hover {
@@ -1200,6 +1213,7 @@ body {
   background-repeat: no-repeat;
   border: 2px solid var(--border-color);
   border-radius: 4px;
+  transition: border-color 0.2s ease;
 }
 
 .card-view-button-tile {
@@ -1258,8 +1272,8 @@ body {
 .card-link {
   grid-column: 1 / -1;
   text-decoration: none;
+  transition: color 0.2s ease;
 }
-
 
 .card-title {
   margin: 0;
@@ -1284,6 +1298,7 @@ body {
 .card-img {
   order: -1;
   grid-column: 1 / -1;
+  transition: opacity 0.2s ease;
 }
 
 .card-img:hover {
@@ -1388,6 +1403,7 @@ body {
   text-align: center;
   background-color: var(--button-light);
   border-radius: 4px;
+  transition: background-color 0.2s ease;
 }
 
 .pagination-link-current {
@@ -1513,6 +1529,7 @@ body {
   border: none;
   border-radius: 4px;
   appearance: textfield;
+  transition: background-color 0.2s ease;
 }
 
 .search-form-input::placeholder {
@@ -1591,6 +1608,7 @@ body {
   background-color: var(--input-color);
   border: none;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 .count-button::before {
@@ -1695,6 +1713,7 @@ body {
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 .tooltip-button:hover {
@@ -1739,6 +1758,7 @@ body {
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
 .modal-close-button::before {
