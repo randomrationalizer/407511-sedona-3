@@ -1435,39 +1435,20 @@ body {
   background-color: transparent;
 }
 
-/*
-  Клас modal-container-show отвечает за отображение модального окна:
-  По умолчанию модальное окно modal-container скрыто.
-  Добавление класса modal-container-show отображает окно.
-*/
-
-.modal-container {
-  display: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: var(--bg-color-overlay);
-}
-
-.modal-container-show {
-  display: flex;
-}
-
 .modal {
-  position: relative;
+  position: fixed;
   box-sizing: border-box;
   width: 717px;
   margin: auto;
   padding: 64px 70px;
   background-color: var(--bg-color-basic);
+  border: none;
   border-radius: 30px;
   box-shadow: 0 25px 50px 0 var(--shadow-color-modal);
 }
 
-.modal-content {
-  width: 577px;
+.modal::backdrop {
+  background-color: var(--bg-color-overlay);
 }
 
 .modal-header {
@@ -1596,6 +1577,10 @@ body {
   border-radius: 0;
 }
 
+.search-form-count:focus-visible {
+  outline-offset: -3px;
+}
+
 .search-form-count::-webkit-outer-spin-button,
 .search-form-count::-webkit-inner-spin-button {
   appearance: none;
@@ -1647,6 +1632,7 @@ body {
   color: var(--icon-color-additional);
   background-color: var(--input-color-hover);
   outline: var(--browser-outline);
+  outline-offset: -3px;
 }
 
 .count-button:active {
