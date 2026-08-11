@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
   <head>
     <meta charset="utf-8">
@@ -8,9 +8,9 @@
     <link rel="icon" href="favicon.ico" sizes="32x32">
   </head>
 
-  <body>
-    <div class="page-container">
-      <header class="page-header" data-test="header">
+  <body class="page__body">
+    <div class="page__container">
+      <header class="main-header" data-test="header">
         <nav class="navigation">
           <a class="navigation-logo" href="index.html" aria-current="page">
             <img class="logo" src="images/sedona-logo.svg" width="140" height="70" alt="Логотип Седоны">
@@ -168,7 +168,7 @@
 
       <!-- Модальное окно -->
       <dialog class="modal" data-test="modal" id="modal" aria-labelledby="modal-name">
-        <section class="modal-content">
+        <section>
           <h2 class="modal-header" id="modal-name">Поиск гостиницы в Седоне</h2>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
 
